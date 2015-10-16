@@ -1,0 +1,17 @@
+A description of what your goal is and why you’re doing your analysis would be helpful. I understand that something like this might be external from you actual code, but I didn’t see any other files in Git other than the .csv and .ipynb.
+
+I understand that you would want to do PCA to hone in on the important features of your dataset, but again it would be helpful to know what you’re trying to analyze so I could better understand why you chose the features you did for your RF model below.
+
+When you patsy after your PCA, the .join syntax could probably be a time-saver instead of writing out each column name:
+
+variables = ‘ + ‘ .join(data.columns[a:z]) # I don’t know your column numbers but substitute them for a:z
+
+Why didn’t you include ‘BB’ or ‘ER’ after running feature importance on your initial RF? 
+
+If you’re using RF for classification, I think you should be using one of ‘accuracy’, ‘precision’, ‘recall’, or ‘f1’ (if you care about both precision AND recall) for your cross_val_score scoring metric, not ‘mean_squared_error’ as I think that’s for regression. I refer to this link to figure out how my model should be evaluated:
+
+http://scikit-learn.org/stable/modules/model_evaluation.html
+
+When I plugged in ‘accuracy’, your RF got 0.85, which seems pretty good! You should probably at least benchmark against a dummy classifier to see if 0.85 is actually good or not.
+
+Would have like to see some more ideas about what you’re going to do to improve the model, or at least ideas about would could be done to improve the model/areas for further research.
