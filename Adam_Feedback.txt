@@ -1,0 +1,3 @@
+This project is coming along very well. From a visualization and storytelling perspective, I would definitley suggest dropping most of the features from the long tail in your histogram. The importance trails off very quickly, so I would condense the story to a smaller number of features to be able to explain the model and to be able to visualize things like your PCA graph. 
+
+You can also zoom in to more familiar teams to look for interesting features. You can look at leading or lagging indicators of wealth or spend (like attendance, for example) and look at how their effect varies in different time periods - the time series lecture on Monday should be very valuable for that. 
