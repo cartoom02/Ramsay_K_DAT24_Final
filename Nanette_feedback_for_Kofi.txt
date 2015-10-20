@@ -1,0 +1,16 @@
+Hi Kofi,
+
+I am lacking some explanation on what your project aims to achieve and how, but I understand that this is a work in progress so you may not have it ready yet. 
+
+I also don’t have any baseball knowledge, so it’ll be great to have a data dictionary to explain these details for a layman.
+
+I’ve made code changes in the notebook so you can view your PCA result more clearly. From what I can see, you are doing PCA to determine if there is a way to simplify those features. From the zoomed-in graph (from my code above), there are two general directions for most of the features (north-east and south-east). I am curious to see if you can make a couple simplified new features.
+
+You did Random Forest next, is the Random Forest related to the PCA in any way? Did you use the result of the PCA for the Random Forest? If yes, it’ll be good to make the connection clearer. If not, you should find a way to make a connection to create a cohesive project. One way is to use the simplified features from the PCA to run the Random Forest (although I don’t know how much it’d help since Random Forest can handle many features… It would help to cut down processing time if you have massive data.)
+
+I’m a lover of data-viz (as you can see from my project haha), so would love to see more visualization as well. 
+
+Looking forward for the next iteration of your project!
+
+
+
